@@ -7,6 +7,7 @@ const AddButton = () => {
     <div className='floating-button'>
         <Link to='note/new/'>
             <Addicon/>
+            <h1>Soumya</h1>
         </Link>
     </div>
   )
