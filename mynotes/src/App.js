@@ -8,6 +8,7 @@ import './App.css';
 import Header from './components/header';
 import NotesListPage from './pages/NotesListPage';
 import NotePage from './pages/NotePage';
+import Test from "./components/Test";
 
 function App() {
   return (
@@ -15,12 +16,14 @@ function App() {
       <div className="container dark">
         <div className="app">
         <Header />
+        <Test/>
         <Routes>
           <Route path='/' element={ <NotesListPage/> } />
           <Route path='/note/:id' element={ <NotePage/> } />
         </Routes>
         </div>
       </div>
+
     </Router>
   );
 }
