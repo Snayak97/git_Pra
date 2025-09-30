@@ -7,7 +7,7 @@ const AddButton = () => {
     <div className='floating-button'>
         <Link to='note/new/'>
             <Addicon/>
-            <h1>Soumya</h1>
+            <h1 style={{ fontSize: '16px', color: 'white', marginTop: '4px', textAlign: 'center' }}>Soumya</h1>
         </Link>
     </div>
   )
