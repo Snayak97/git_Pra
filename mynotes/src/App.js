@@ -14,9 +14,10 @@ function App() {
   return (
     <Router>
       <div className="container dark">
+        <Test/>
         <div className="app">
         <Header />
-        <Test/>
+        
         <Routes>
           <Route path='/' element={ <NotesListPage/> } />
           <Route path='/note/:id' element={ <NotePage/> } />
