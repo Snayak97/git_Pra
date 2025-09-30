@@ -13,7 +13,12 @@ RUN apt-get update \
 RUN pip install mysqlclient
 RUN pip install --no-cache-dir -r requirements.txt
 
+
 COPY . /app/backend
+
+# Copy wait-for-db.sh and make it executable
+COPY wait-for-db.sh /app/backend/wait-for-db.sh
+RUN chmod +x /app/backend/wait-for-db.sh
 
 EXPOSE 8000
 #RUN python manage.py migrate
