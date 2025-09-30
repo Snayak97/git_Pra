@@ -52,21 +52,41 @@ a {
 /* APP STYLES */
 
 
-.container {
+/* .container {
   width: 100%;
   height: 100vh;
   color: var(--color-text);
   background-color: var(--color-bg);
   display: flex;
   align-items: center;
+} */
+.container {
+  width: 100%;
+  height: 100vh;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  display: flex;
+  flex-direction: column; /* stack items vertically */
+  align-items: center;    /* center horizontally */
+  justify-content: flex-start; /* push content from top */
+  padding-top: 20px;      /* optional spacing from top */
 }
 
 
-.app {
+/* .app {
   width: 100%;
   max-width: 480px;
   height: 88vh;
   margin: 0 auto;
+  background-color: var(--color-white);
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.05);
+  position: relative;
+} */
+.app {
+  width: 100%;
+  max-width: 480px;
+  height: 88vh;
+  margin: 20px auto; /* add space from top/Test */
   background-color: var(--color-white);
   box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.05);
   position: relative;
